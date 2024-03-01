@@ -15,4 +15,18 @@ void main (){
   };
 print(userData["name"]);//output Alice
 print(userData["isStudent"]);//Output true
+//Accessing nested map values
+print(userData['address']['city']);
+
+//adding a new key-value pair (dynamic value)
+userData['occupation'] = 'Software Engineer';
+
+//Checking if a key exists
+if (userData.containsKey("phone number")){
+  print('Phone number exists');
+} else {
+  print('Phone number not found');
+}
+
+print(userData);
 }
